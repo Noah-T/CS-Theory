@@ -35,8 +35,10 @@
         NSLog(@"%@ ", number);
     }
     NSLog(@"\n\n");
+    
+    BOOL valuesWereSwapped;
     for (int i = 0; i < n -2; i++) {
-        
+        valuesWereSwapped = NO;
         for (int j = 0; j < n -1; j++) {
             
             if (randomArray[j] > randomArray[j+1]) {
@@ -45,7 +47,11 @@
                 swapValue = randomArray[j];
                 randomArray[i] = randomArray[j+1];
                 randomArray[j+1] = swapValue;
+                valuesWereSwapped = YES;
             }
+        }
+        if (!valuesWereSwapped) {
+            break;
         }
     }
     
