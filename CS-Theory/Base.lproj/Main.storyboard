@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -25,34 +25,125 @@
                                     <action selector="runBubbleSort:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="D5M-sl-VF6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qj-NX-RHa">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufG-aM-afg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zq-eO-Ych">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Run Linear Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runLinearSearch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nQ5-79-rIA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GT-ds-gMB">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Run Binary Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runBinarySearch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dEP-V9-6fR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U97-1b-tpH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Run Merge Sort">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runMergeSort:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YOC-gd-fMu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4Qj-NX-RHa" secondAttribute="centerX" id="1li-sq-sJL"/>
+                            <constraint firstAttribute="centerX" secondItem="ufG-aM-afg" secondAttribute="centerX" id="7O1-2k-ayb"/>
+                            <constraint firstItem="1VK-pz-M9J" firstAttribute="top" secondItem="ufG-aM-afg" secondAttribute="bottom" constant="20" id="8jj-DL-RKb">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="U97-1b-tpH" firstAttribute="top" secondItem="1VK-pz-M9J" secondAttribute="bottom" constant="20" id="BCx-hX-7OO">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="2GT-ds-gMB" firstAttribute="top" secondItem="6zq-eO-Ych" secondAttribute="bottom" constant="20" id="BlD-CF-y9K">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="6zq-eO-Ych" secondAttribute="centerX" id="PUI-yi-5lf"/>
+                            <constraint firstAttribute="centerX" secondItem="U97-1b-tpH" secondAttribute="centerX" id="agd-Ph-FMa"/>
+                            <constraint firstItem="6zq-eO-Ych" firstAttribute="top" secondItem="4Qj-NX-RHa" secondAttribute="bottom" constant="7.5" id="b6N-IF-pBe">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="ufG-aM-afg" secondAttribute="centerY" id="ho3-HV-vsN"/>
                             <constraint firstAttribute="centerY" secondItem="1VK-pz-M9J" secondAttribute="centerY" id="jwM-j1-0R8"/>
+                            <constraint firstItem="4Qj-NX-RHa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="u3A-GZ-i3S"/>
                             <constraint firstAttribute="centerX" secondItem="1VK-pz-M9J" secondAttribute="centerX" id="uRQ-ZZ-rlQ"/>
+                            <constraint firstAttribute="centerX" secondItem="2GT-ds-gMB" secondAttribute="centerX" id="zWj-jU-gAt"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="1VK-pz-M9J"/>
+                                <exclude reference="4Qj-NX-RHa"/>
+                                <exclude reference="ufG-aM-afg"/>
+                                <exclude reference="6zq-eO-Ych"/>
+                                <exclude reference="2GT-ds-gMB"/>
+                                <exclude reference="U97-1b-tpH"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="PUI-yi-5lf"/>
+                                <exclude reference="b6N-IF-pBe"/>
+                                <exclude reference="BlD-CF-y9K"/>
+                                <exclude reference="zWj-jU-gAt"/>
+                                <exclude reference="1li-sq-sJL"/>
+                                <exclude reference="u3A-GZ-i3S"/>
+                                <exclude reference="7O1-2k-ayb"/>
+                                <exclude reference="ho3-HV-vsN"/>
+                                <exclude reference="8jj-DL-RKb"/>
                                 <exclude reference="jwM-j1-0R8"/>
                                 <exclude reference="uRQ-ZZ-rlQ"/>
+                                <exclude reference="BCx-hX-7OO"/>
+                                <exclude reference="agd-Ph-FMa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="1VK-pz-M9J"/>
+                                <include reference="4Qj-NX-RHa"/>
+                                <include reference="ufG-aM-afg"/>
+                                <include reference="6zq-eO-Ych"/>
+                                <include reference="2GT-ds-gMB"/>
+                                <include reference="U97-1b-tpH"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="jwM-j1-0R8"/>
+                                <include reference="PUI-yi-5lf"/>
+                                <include reference="b6N-IF-pBe"/>
+                                <include reference="BlD-CF-y9K"/>
+                                <include reference="zWj-jU-gAt"/>
+                                <include reference="1li-sq-sJL"/>
+                                <include reference="u3A-GZ-i3S"/>
+                                <include reference="7O1-2k-ayb"/>
+                                <include reference="ho3-HV-vsN"/>
+                                <include reference="8jj-DL-RKb"/>
+                                <exclude reference="jwM-j1-0R8"/>
                                 <include reference="uRQ-ZZ-rlQ"/>
+                                <include reference="BCx-hX-7OO"/>
+                                <include reference="agd-Ph-FMa"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="561" y="208"/>
         </scene>
     </scenes>
 </document>

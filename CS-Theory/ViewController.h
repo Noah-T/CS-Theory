@@ -10,7 +10,14 @@
 
 @interface ViewController : UIViewController
 
+//searching
+- (IBAction)runLinearSearch:(id)sender;
+- (IBAction)runBinarySearch:(id)sender;
+
+//sorting
 - (IBAction)runBubbleSort:(id)sender;
+- (IBAction)runMergeSort:(id)sender;
+
 
 @end
 
