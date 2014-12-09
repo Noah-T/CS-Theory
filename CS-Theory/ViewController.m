@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) NSMutableArray *randomArray;
+
 @end
 
 @implementation ViewController
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    self.randomArray = [self createArrayOfThisManyRandomNumbers:8 upperBound:12];
+    [self reverseArray:self.randomArray];
+    //[self decrementWithRecursion:5];
+    //[self incrementWithRecursion:42];
 }
 
 
@@ -93,6 +103,11 @@
     
 }
 
+- (IBAction)runFactorialRecursion:(id)sender {
+    
+    
+}
+
 -(NSMutableArray *)createArrayOfThisManyRandomNumbers:(int)n upperBound:(u_int32_t)upperBound{
     NSMutableArray *randomArray = [NSMutableArray array];
     for (int i = 0; i < n; i++) {
@@ -143,5 +158,65 @@
     newLeftArray = [result arrayByAddingObjectsFromArray:newLeftArray];
     return [newLeftArray arrayByAddingObjectsFromArray:newRightArray];
     
+}
+
+-(void)reverseArray:(NSMutableArray *)array
+{
+    NSUInteger arrayCount = array.count;
+    NSUInteger haflOfArrayCount = arrayCount/2;
+    
+    NSLog(@"array pre: %@", array);
+    for (int i = 0; i < haflOfArrayCount; i++) {
+        NSUInteger indexOfFirstObject = i;
+        NSUInteger indexOfLastObject = arrayCount-1-indexOfFirstObject;
+        
+        if (indexOfFirstObject == indexOfLastObject) {
+            NSLog(@"fires on array with odd number of items");
+        }
+        
+        id temp = [array objectAtIndex:indexOfFirstObject];
+        array[indexOfFirstObject] = array[indexOfLastObject];
+        array[indexOfLastObject] = temp;
+    }
+    
+    NSLog(@"array post: %@", array);
+
+
+}
+
+- (int)factorial:(int)n
+{
+    if (n == 1) {
+        return 1;
+    }
+    
+    return n * [self factorial:n-1];
+}
+
+- (void)decrementWithRecursion:(int)myInt
+{
+//    NSLog(@"this is the beginning of the function");
+//    NSLog(@"the passed in value is: %d", myInt);
+    //identify base case
+    if (myInt == 0) {
+        NSLog(@"that's all folks");
+        return;
+    }
+    
+    NSLog(@"myInt has a value of %d", myInt);
+    myInt--;
+    [self decrementWithRecursion:myInt];
+}
+
+- (void)incrementWithRecursion:(int)myInt
+{
+    if (myInt == 101) {
+        NSLog(@"that's all folks");
+        return;
+    }
+    
+    NSLog(@"myInt has a value of %d", myInt);
+    myInt++;
+    [self incrementWithRecursion:myInt];
 }
 @end

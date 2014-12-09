@@ -18,6 +18,8 @@
 - (IBAction)runBubbleSort:(id)sender;
 - (IBAction)runMergeSort:(id)sender;
 
+- (IBAction)runFactorialRecursion:(id)sender;
+
 
 @end
 
