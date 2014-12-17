@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE141E811A3CC38600641C62 /* NATStringSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE141E801A3CC38600641C62 /* NATStringSearchViewController.m */; };
+		DE2308911A412A3D00A13B8D /* FibonacciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2308901A412A3D00A13B8D /* FibonacciViewController.m */; };
 		DE30EE261A33F71000E51754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE30EE251A33F71000E51754 /* main.m */; };
 		DE30EE291A33F71000E51754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE30EE281A33F71000E51754 /* AppDelegate.m */; };
 		DE30EE2C1A33F71000E51754 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE30EE2B1A33F71000E51754 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE141E7F1A3CC38600641C62 /* NATStringSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATStringSearchViewController.h; sourceTree = "<group>"; };
+		DE141E801A3CC38600641C62 /* NATStringSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATStringSearchViewController.m; sourceTree = "<group>"; };
+		DE23088F1A412A3D00A13B8D /* FibonacciViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FibonacciViewController.h; sourceTree = "<group>"; };
+		DE2308901A412A3D00A13B8D /* FibonacciViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibonacciViewController.m; sourceTree = "<group>"; };
 		DE30EE201A33F71000E51754 /* CS-Theory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-Theory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE30EE241A33F71000E51754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE30EE251A33F71000E51754 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +92,10 @@
 				DE30EE2A1A33F71000E51754 /* ViewController.h */,
 				DE30EE2B1A33F71000E51754 /* ViewController.m */,
 				DE30EE2D1A33F71000E51754 /* Main.storyboard */,
+				DE23088F1A412A3D00A13B8D /* FibonacciViewController.h */,
+				DE2308901A412A3D00A13B8D /* FibonacciViewController.m */,
+				DE141E7F1A3CC38600641C62 /* NATStringSearchViewController.h */,
+				DE141E801A3CC38600641C62 /* NATStringSearchViewController.m */,
 				DE30EE301A33F71000E51754 /* Images.xcassets */,
 				DE30EE321A33F71000E51754 /* LaunchScreen.xib */,
 				DE30EE231A33F71000E51754 /* Supporting Files */,
@@ -220,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE30EE2C1A33F71000E51754 /* ViewController.m in Sources */,
+				DE141E811A3CC38600641C62 /* NATStringSearchViewController.m in Sources */,
 				DE30EE291A33F71000E51754 /* AppDelegate.m in Sources */,
 				DE30EE261A33F71000E51754 /* main.m in Sources */,
+				DE2308911A412A3D00A13B8D /* FibonacciViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				DE30EE451A33F71000E51754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE30EE461A33F71000E51754 /* Build configuration list for PBXNativeTarget "CS-TheoryTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				DE30EE481A33F71000E51754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSMutableArray *randomArray;
 
+
 @end
 
 @implementation ViewController
