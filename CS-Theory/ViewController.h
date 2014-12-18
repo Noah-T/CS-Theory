@@ -20,6 +20,7 @@
 
 - (IBAction)runFactorialRecursion:(id)sender;
 
+- (IBAction)printOddNumbers:(id)sender;
 
 @end
 

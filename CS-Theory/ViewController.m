@@ -109,6 +109,10 @@
     
 }
 
+- (IBAction)printOddNumbers:(id)sender {
+    [self printOddRecursiveFrom:0 to:100];
+}
+
 -(NSMutableArray *)createArrayOfThisManyRandomNumbers:(int)n upperBound:(u_int32_t)upperBound{
     NSMutableArray *randomArray = [NSMutableArray array];
     for (int i = 0; i < n; i++) {
@@ -205,8 +209,8 @@
     }
     
     NSLog(@"myInt has a value of %d", myInt);
-    myInt--;
-    [self decrementWithRecursion:myInt];
+    
+    [self decrementWithRecursion:myInt-1];
 }
 
 - (void)incrementWithRecursion:(int)myInt
@@ -217,7 +221,19 @@
     }
     
     NSLog(@"myInt has a value of %d", myInt);
-    myInt++;
-    [self incrementWithRecursion:myInt];
+
+    [self incrementWithRecursion:myInt+1];
+}
+
+- (void)printOddRecursiveFrom:(int)min to:(int)max
+{
+    if (min > max) {
+        return;
+    }
+    
+    if (min % 2 != 0) {
+        NSLog(@"%d", min);
+    }
+    [self printOddRecursiveFrom:min+1 to:max];
 }
 @end
