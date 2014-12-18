@@ -104,6 +104,15 @@
     
 }
 
+- (IBAction)runSelectionSort:(id)sender {
+    NSMutableArray *unsortedArray = [self createArrayOfThisManyRandomNumbers:20 upperBound:69];
+    NSLog(@"unsorted: %@", unsortedArray);
+    NSMutableArray *sortedArray = [self selectionSort:unsortedArray];
+    NSLog(@"sorted: %@", sortedArray);
+}
+
+
+//do this...
 - (IBAction)runFactorialRecursion:(id)sender {
     
     
@@ -235,5 +244,28 @@
         NSLog(@"%d", min);
     }
     [self printOddRecursiveFrom:min+1 to:max];
+}
+
+-(NSMutableArray *)selectionSort:(NSMutableArray *)unsortedArray
+{
+    int currentMin, currentMinIndex;
+    NSUInteger unsortedArrayInitialCount = unsortedArray.count;
+    NSMutableArray *sortedArray = [NSMutableArray array];
+    
+    for (int i = 0; i <unsortedArrayInitialCount -1; i++) {
+        currentMin = (int)unsortedArray[0];
+        currentMinIndex = 0;
+        for (int j = 1; j <unsortedArray.count; j++) {
+            if ((int)unsortedArray[j] < currentMin) {
+                currentMin = (int)unsortedArray[j];
+                currentMinIndex = j;
+            }
+        }
+        //add to sorted
+        [sortedArray addObject:unsortedArray[currentMinIndex]];
+        //remove from unsorted
+        [unsortedArray removeObjectAtIndex:currentMinIndex];
+    }
+    return sortedArray;
 }
 @end

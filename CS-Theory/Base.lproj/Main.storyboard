@@ -102,6 +102,15 @@
                                     <action selector="printOddNumbers:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="52z-mQ-9p2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR8-oT-eB2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Run Selection Sort">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runSelectionSort:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OgV-9m-4pS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -124,6 +133,8 @@
                             <constraint firstAttribute="centerX" secondItem="sXp-Ai-Pg0" secondAttribute="centerX" id="Ogb-3v-KjJ"/>
                             <constraint firstAttribute="centerX" secondItem="6zq-eO-Ych" secondAttribute="centerX" id="PUI-yi-5lf"/>
                             <constraint firstItem="1yw-i1-zl9" firstAttribute="top" secondItem="DtM-Ub-SUm" secondAttribute="bottom" constant="82" id="QkC-02-l6F"/>
+                            <constraint firstItem="eR8-oT-eB2" firstAttribute="top" secondItem="U97-1b-tpH" secondAttribute="bottom" constant="8" id="Qtw-yy-Wez"/>
+                            <constraint firstAttribute="centerX" secondItem="eR8-oT-eB2" secondAttribute="centerX" id="VoQ-Pd-6aA"/>
                             <constraint firstAttribute="centerX" secondItem="U97-1b-tpH" secondAttribute="centerX" id="agd-Ph-FMa"/>
                             <constraint firstItem="6zq-eO-Ych" firstAttribute="top" secondItem="4Qj-NX-RHa" secondAttribute="bottom" constant="7.5" id="b6N-IF-pBe">
                                 <variation key="widthClass=compact" constant="10"/>
@@ -147,6 +158,7 @@
                                 <exclude reference="1yw-i1-zl9"/>
                                 <exclude reference="DtM-Ub-SUm"/>
                                 <exclude reference="sXp-Ai-Pg0"/>
+                                <exclude reference="eR8-oT-eB2"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="PUI-yi-5lf"/>
@@ -164,6 +176,8 @@
                                 <exclude reference="uRQ-ZZ-rlQ"/>
                                 <exclude reference="BCx-hX-7OO"/>
                                 <exclude reference="agd-Ph-FMa"/>
+                                <exclude reference="Qtw-yy-Wez"/>
+                                <exclude reference="VoQ-Pd-6aA"/>
                                 <exclude reference="1N4-Ax-ikF"/>
                                 <exclude reference="Ogb-3v-KjJ"/>
                                 <exclude reference="sL7-q8-Fea"/>
@@ -184,6 +198,7 @@
                                 <include reference="1yw-i1-zl9"/>
                                 <include reference="DtM-Ub-SUm"/>
                                 <include reference="sXp-Ai-Pg0"/>
+                                <include reference="eR8-oT-eB2"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="PUI-yi-5lf"/>
@@ -201,6 +216,8 @@
                                 <include reference="uRQ-ZZ-rlQ"/>
                                 <include reference="BCx-hX-7OO"/>
                                 <include reference="agd-Ph-FMa"/>
+                                <include reference="Qtw-yy-Wez"/>
+                                <include reference="VoQ-Pd-6aA"/>
                                 <include reference="1N4-Ax-ikF"/>
                                 <include reference="Ogb-3v-KjJ"/>
                                 <include reference="sL7-q8-Fea"/>

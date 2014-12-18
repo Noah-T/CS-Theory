@@ -17,6 +17,7 @@
 //sorting
 - (IBAction)runBubbleSort:(id)sender;
 - (IBAction)runMergeSort:(id)sender;
+- (IBAction)runSelectionSort:(id)sender;
 
 - (IBAction)runFactorialRecursion:(id)sender;
 
