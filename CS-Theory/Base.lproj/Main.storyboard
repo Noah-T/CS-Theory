@@ -111,12 +111,23 @@
                                     <action selector="runSelectionSort:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OgV-9m-4pS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUO-gc-y5G">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Reverse a String">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zvb-Ki-Ylo" kind="show" id="Fjh-mb-Ad8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="DtM-Ub-SUm" secondAttribute="centerX" id="1N4-Ax-ikF"/>
                             <constraint firstItem="9Nn-XM-DgJ" firstAttribute="top" secondItem="2GT-ds-gMB" secondAttribute="bottom" constant="8" id="1aH-5m-tbP"/>
                             <constraint firstAttribute="centerX" secondItem="4Qj-NX-RHa" secondAttribute="centerX" id="1li-sq-sJL"/>
+                            <constraint firstAttribute="centerX" secondItem="RUO-gc-y5G" secondAttribute="centerX" id="2Zz-Yj-Tmi"/>
+                            <constraint firstItem="RUO-gc-y5G" firstAttribute="top" secondItem="sXp-Ai-Pg0" secondAttribute="bottom" constant="8" id="53r-XN-rbv"/>
                             <constraint firstAttribute="centerX" secondItem="1yw-i1-zl9" secondAttribute="centerX" id="7IL-MG-bZI"/>
                             <constraint firstAttribute="centerX" secondItem="ufG-aM-afg" secondAttribute="centerX" id="7O1-2k-ayb"/>
                             <constraint firstItem="1VK-pz-M9J" firstAttribute="top" secondItem="ufG-aM-afg" secondAttribute="bottom" constant="20" id="8jj-DL-RKb">
@@ -159,6 +170,7 @@
                                 <exclude reference="DtM-Ub-SUm"/>
                                 <exclude reference="sXp-Ai-Pg0"/>
                                 <exclude reference="eR8-oT-eB2"/>
+                                <exclude reference="RUO-gc-y5G"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="PUI-yi-5lf"/>
@@ -181,6 +193,8 @@
                                 <exclude reference="1N4-Ax-ikF"/>
                                 <exclude reference="Ogb-3v-KjJ"/>
                                 <exclude reference="sL7-q8-Fea"/>
+                                <exclude reference="2Zz-Yj-Tmi"/>
+                                <exclude reference="53r-XN-rbv"/>
                                 <exclude reference="7IL-MG-bZI"/>
                                 <exclude reference="QkC-02-l6F"/>
                                 <exclude reference="J1d-gh-jjl"/>
@@ -199,6 +213,7 @@
                                 <include reference="DtM-Ub-SUm"/>
                                 <include reference="sXp-Ai-Pg0"/>
                                 <include reference="eR8-oT-eB2"/>
+                                <include reference="RUO-gc-y5G"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="PUI-yi-5lf"/>
@@ -221,6 +236,8 @@
                                 <include reference="1N4-Ax-ikF"/>
                                 <include reference="Ogb-3v-KjJ"/>
                                 <include reference="sL7-q8-Fea"/>
+                                <include reference="2Zz-Yj-Tmi"/>
+                                <include reference="53r-XN-rbv"/>
                                 <include reference="7IL-MG-bZI"/>
                                 <include reference="QkC-02-l6F"/>
                                 <include reference="J1d-gh-jjl"/>
@@ -232,6 +249,110 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1479" y="208"/>
+        </scene>
+        <!--Reverse String View Controller-->
+        <scene sceneID="X0M-GE-j4N">
+            <objects>
+                <viewController id="zvb-Ki-Ylo" customClass="ReverseStringViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KO5-yA-DMo"/>
+                        <viewControllerLayoutGuide type="bottom" id="FNN-WP-8Ag"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KDx-Hv-IsO">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your string" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v19-I6-w6v">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse a String" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ0-Rn-6JS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x66-Yz-1zu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Reverse">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reverseString:" destination="zvb-Ki-Ylo" eventType="touchUpInside" id="nku-AR-ylW"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVf-KS-Hox">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v19-I6-w6v" firstAttribute="leading" secondItem="KDx-Hv-IsO" secondAttribute="leadingMargin" id="1QU-Gu-JsI"/>
+                            <constraint firstItem="v19-I6-w6v" firstAttribute="trailing" secondItem="KDx-Hv-IsO" secondAttribute="trailingMargin" id="3SZ-E1-xmN"/>
+                            <constraint firstItem="AVf-KS-Hox" firstAttribute="leading" secondItem="KDx-Hv-IsO" secondAttribute="leadingMargin" id="4Qq-SP-jfz"/>
+                            <constraint firstItem="AVf-KS-Hox" firstAttribute="trailing" secondItem="KDx-Hv-IsO" secondAttribute="trailingMargin" id="4sm-Cm-j6T"/>
+                            <constraint firstItem="FNN-WP-8Ag" firstAttribute="top" secondItem="AVf-KS-Hox" secondAttribute="bottom" constant="20" id="6GC-z9-3rn"/>
+                            <constraint firstItem="AVf-KS-Hox" firstAttribute="top" secondItem="x66-Yz-1zu" secondAttribute="bottom" constant="8" id="S7S-Nv-J9a"/>
+                            <constraint firstItem="fQ0-Rn-6JS" firstAttribute="top" secondItem="KO5-yA-DMo" secondAttribute="bottom" constant="27" id="SKJ-s4-CwU"/>
+                            <constraint firstItem="x66-Yz-1zu" firstAttribute="top" secondItem="v19-I6-w6v" secondAttribute="bottom" constant="8" id="TSY-Mm-Sch"/>
+                            <constraint firstItem="v19-I6-w6v" firstAttribute="top" secondItem="fQ0-Rn-6JS" secondAttribute="bottom" constant="17.5" id="ioo-Jz-fur"/>
+                            <constraint firstAttribute="centerX" secondItem="x66-Yz-1zu" secondAttribute="centerX" id="r3w-35-zSZ"/>
+                            <constraint firstAttribute="centerX" secondItem="fQ0-Rn-6JS" secondAttribute="centerX" id="reE-LJ-HDw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="v19-I6-w6v"/>
+                                <exclude reference="fQ0-Rn-6JS"/>
+                                <exclude reference="x66-Yz-1zu"/>
+                                <exclude reference="AVf-KS-Hox"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1QU-Gu-JsI"/>
+                                <exclude reference="3SZ-E1-xmN"/>
+                                <exclude reference="ioo-Jz-fur"/>
+                                <exclude reference="SKJ-s4-CwU"/>
+                                <exclude reference="reE-LJ-HDw"/>
+                                <exclude reference="4Qq-SP-jfz"/>
+                                <exclude reference="4sm-Cm-j6T"/>
+                                <exclude reference="S7S-Nv-J9a"/>
+                                <exclude reference="TSY-Mm-Sch"/>
+                                <exclude reference="r3w-35-zSZ"/>
+                                <exclude reference="6GC-z9-3rn"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="v19-I6-w6v"/>
+                                <include reference="fQ0-Rn-6JS"/>
+                                <include reference="x66-Yz-1zu"/>
+                                <include reference="AVf-KS-Hox"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1QU-Gu-JsI"/>
+                                <include reference="3SZ-E1-xmN"/>
+                                <include reference="ioo-Jz-fur"/>
+                                <include reference="SKJ-s4-CwU"/>
+                                <include reference="reE-LJ-HDw"/>
+                                <include reference="4Qq-SP-jfz"/>
+                                <include reference="4sm-Cm-j6T"/>
+                                <include reference="S7S-Nv-J9a"/>
+                                <include reference="TSY-Mm-Sch"/>
+                                <include reference="r3w-35-zSZ"/>
+                                <include reference="6GC-z9-3rn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="reversedStringOutput" destination="AVf-KS-Hox" id="xhT-cH-s3J"/>
+                        <outlet property="userText" destination="v19-I6-w6v" id="bg2-ij-Jat"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pyr-68-hoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324.5" y="1056"/>
         </scene>
         <!--Fibonacci View Controller-->
         <scene sceneID="cGR-8N-vKV">

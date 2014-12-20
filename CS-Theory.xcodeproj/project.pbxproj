@@ -16,6 +16,7 @@
 		DE30EE311A33F71000E51754 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE30EE301A33F71000E51754 /* Images.xcassets */; };
 		DE30EE341A33F71000E51754 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE30EE321A33F71000E51754 /* LaunchScreen.xib */; };
 		DE30EE401A33F71000E51754 /* CS_TheoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE30EE3F1A33F71000E51754 /* CS_TheoryTests.m */; };
+		DE8DB1E21A44FF6600FF26FA /* ReverseStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8DB1E11A44FF6600FF26FA /* ReverseStringViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		DE30EE391A33F71000E51754 /* CS-TheoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS-TheoryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE30EE3E1A33F71000E51754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE30EE3F1A33F71000E51754 /* CS_TheoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CS_TheoryTests.m; sourceTree = "<group>"; };
+		DE8DB1E01A44FF6600FF26FA /* ReverseStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseStringViewController.h; sourceTree = "<group>"; };
+		DE8DB1E11A44FF6600FF26FA /* ReverseStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseStringViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				DE30EE2A1A33F71000E51754 /* ViewController.h */,
 				DE30EE2B1A33F71000E51754 /* ViewController.m */,
 				DE30EE2D1A33F71000E51754 /* Main.storyboard */,
+				DE8DB1E01A44FF6600FF26FA /* ReverseStringViewController.h */,
+				DE8DB1E11A44FF6600FF26FA /* ReverseStringViewController.m */,
 				DE23088F1A412A3D00A13B8D /* FibonacciViewController.h */,
 				DE2308901A412A3D00A13B8D /* FibonacciViewController.m */,
 				DE141E7F1A3CC38600641C62 /* NATStringSearchViewController.h */,
@@ -233,6 +238,7 @@
 				DE141E811A3CC38600641C62 /* NATStringSearchViewController.m in Sources */,
 				DE30EE291A33F71000E51754 /* AppDelegate.m in Sources */,
 				DE30EE261A33F71000E51754 /* main.m in Sources */,
+				DE8DB1E21A44FF6600FF26FA /* ReverseStringViewController.m in Sources */,
 				DE2308911A412A3D00A13B8D /* FibonacciViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
