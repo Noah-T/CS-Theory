@@ -22,6 +22,7 @@
 - (IBAction)runFactorialRecursion:(id)sender;
 
 - (IBAction)printOddNumbers:(id)sender;
+- (IBAction)printMultiplicationTable:(id)sender;
 
 @end
 

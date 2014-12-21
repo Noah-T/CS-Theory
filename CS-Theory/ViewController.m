@@ -122,6 +122,19 @@
     [self printOddRecursiveFrom:0 to:100];
 }
 
+- (IBAction)printMultiplicationTable:(id)sender {
+    //print out 1-12
+    for (int i = 1; i <= 12; i++) {
+        for (int j = 1; j <=12; j++) {
+            NSLog(@"%d ", i * j);
+            if (i * j > 9) {
+                NSLog(@" ");
+            }
+        }
+        NSLog(@"\n");
+    }
+}
+
 -(NSMutableArray *)createArrayOfThisManyRandomNumbers:(int)n upperBound:(u_int32_t)upperBound{
     NSMutableArray *randomArray = [NSMutableArray array];
     for (int i = 0; i < n; i++) {

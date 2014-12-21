@@ -120,6 +120,15 @@
                                     <segue destination="zvb-Ki-Ylo" kind="show" id="Fjh-mb-Ad8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIP-SL-XCX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Print out multiplication table">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="printMultiplicationTable:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ohj-8i-2E2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -145,6 +154,8 @@
                             <constraint firstAttribute="centerX" secondItem="6zq-eO-Ych" secondAttribute="centerX" id="PUI-yi-5lf"/>
                             <constraint firstItem="1yw-i1-zl9" firstAttribute="top" secondItem="DtM-Ub-SUm" secondAttribute="bottom" constant="82" id="QkC-02-l6F"/>
                             <constraint firstItem="eR8-oT-eB2" firstAttribute="top" secondItem="U97-1b-tpH" secondAttribute="bottom" constant="8" id="Qtw-yy-Wez"/>
+                            <constraint firstItem="eIP-SL-XCX" firstAttribute="top" secondItem="9Nn-XM-DgJ" secondAttribute="bottom" constant="8" id="R8R-Wq-rAG"/>
+                            <constraint firstAttribute="centerX" secondItem="eIP-SL-XCX" secondAttribute="centerX" id="Tjf-5o-knA"/>
                             <constraint firstAttribute="centerX" secondItem="eR8-oT-eB2" secondAttribute="centerX" id="VoQ-Pd-6aA"/>
                             <constraint firstAttribute="centerX" secondItem="U97-1b-tpH" secondAttribute="centerX" id="agd-Ph-FMa"/>
                             <constraint firstItem="6zq-eO-Ych" firstAttribute="top" secondItem="4Qj-NX-RHa" secondAttribute="bottom" constant="7.5" id="b6N-IF-pBe">
@@ -171,6 +182,7 @@
                                 <exclude reference="sXp-Ai-Pg0"/>
                                 <exclude reference="eR8-oT-eB2"/>
                                 <exclude reference="RUO-gc-y5G"/>
+                                <exclude reference="eIP-SL-XCX"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="PUI-yi-5lf"/>
@@ -181,6 +193,8 @@
                                 <exclude reference="zWj-jU-gAt"/>
                                 <exclude reference="1aH-5m-tbP"/>
                                 <exclude reference="Cct-c2-LGp"/>
+                                <exclude reference="R8R-Wq-rAG"/>
+                                <exclude reference="Tjf-5o-knA"/>
                                 <exclude reference="7O1-2k-ayb"/>
                                 <exclude reference="ho3-HV-vsN"/>
                                 <exclude reference="8jj-DL-RKb"/>
@@ -214,6 +228,7 @@
                                 <include reference="sXp-Ai-Pg0"/>
                                 <include reference="eR8-oT-eB2"/>
                                 <include reference="RUO-gc-y5G"/>
+                                <include reference="eIP-SL-XCX"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="PUI-yi-5lf"/>
@@ -224,6 +239,8 @@
                                 <include reference="zWj-jU-gAt"/>
                                 <include reference="1aH-5m-tbP"/>
                                 <include reference="Cct-c2-LGp"/>
+                                <include reference="R8R-Wq-rAG"/>
+                                <include reference="Tjf-5o-knA"/>
                                 <include reference="7O1-2k-ayb"/>
                                 <include reference="ho3-HV-vsN"/>
                                 <include reference="8jj-DL-RKb"/>
@@ -259,6 +276,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FNN-WP-8Ag"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KDx-Hv-IsO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your string" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v19-I6-w6v">
@@ -281,7 +299,7 @@
                                     <action selector="reverseString:" destination="zvb-Ki-Ylo" eventType="touchUpInside" id="nku-AR-ylW"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVf-KS-Hox">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVf-KS-Hox">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -310,17 +328,17 @@
                                 <exclude reference="AVf-KS-Hox"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="6GC-z9-3rn"/>
+                                <exclude reference="SKJ-s4-CwU"/>
+                                <exclude reference="reE-LJ-HDw"/>
                                 <exclude reference="1QU-Gu-JsI"/>
                                 <exclude reference="3SZ-E1-xmN"/>
                                 <exclude reference="ioo-Jz-fur"/>
-                                <exclude reference="SKJ-s4-CwU"/>
-                                <exclude reference="reE-LJ-HDw"/>
+                                <exclude reference="TSY-Mm-Sch"/>
+                                <exclude reference="r3w-35-zSZ"/>
                                 <exclude reference="4Qq-SP-jfz"/>
                                 <exclude reference="4sm-Cm-j6T"/>
                                 <exclude reference="S7S-Nv-J9a"/>
-                                <exclude reference="TSY-Mm-Sch"/>
-                                <exclude reference="r3w-35-zSZ"/>
-                                <exclude reference="6GC-z9-3rn"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -331,17 +349,17 @@
                                 <include reference="AVf-KS-Hox"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="6GC-z9-3rn"/>
+                                <include reference="SKJ-s4-CwU"/>
+                                <include reference="reE-LJ-HDw"/>
                                 <include reference="1QU-Gu-JsI"/>
                                 <include reference="3SZ-E1-xmN"/>
                                 <include reference="ioo-Jz-fur"/>
-                                <include reference="SKJ-s4-CwU"/>
-                                <include reference="reE-LJ-HDw"/>
+                                <include reference="TSY-Mm-Sch"/>
+                                <include reference="r3w-35-zSZ"/>
                                 <include reference="4Qq-SP-jfz"/>
                                 <include reference="4sm-Cm-j6T"/>
                                 <include reference="S7S-Nv-J9a"/>
-                                <include reference="TSY-Mm-Sch"/>
-                                <include reference="r3w-35-zSZ"/>
-                                <include reference="6GC-z9-3rn"/>
                             </mask>
                         </variation>
                     </view>
