@@ -24,10 +24,15 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    self.randomArray = [self createArrayOfThisManyRandomNumbers:8 upperBound:12];
+    self.randomArray = [self createArrayOfThisManyRandomNumbers:30 upperBound:50];
     [self reverseArray:self.randomArray];
     //[self decrementWithRecursion:5];
     //[self incrementWithRecursion:42];
+    NSLog(@"running find Max\n\n");
+    NSUInteger theMaxInArray = [self findMax:self.randomArray];
+    NSLog(@"the array is: %@", self.randomArray);
+    NSLog(@"the max in the array is: %lu",  (unsigned long)theMaxInArray);
+    
 }
 
 
@@ -280,5 +285,18 @@
         [unsortedArray removeObjectAtIndex:currentMinIndex];
     }
     return sortedArray;
+}
+
+-(NSUInteger)findMax:(NSMutableArray *)array
+{
+    NSUInteger arrayCount = array.count;
+    NSUInteger Max = [array[0]integerValue];
+    for (int i =0; i<arrayCount; i++) {
+        if ([array[i]integerValue]>Max) {
+            Max = [array[i]integerValue];
+        }
+    }
+    return Max;
+    
 }
 @end
